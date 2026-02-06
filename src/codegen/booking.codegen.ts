@@ -1,0 +1,36 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.booking.com/?chal_t=1770236885577&force_referer=');
+  await page.getByRole('button', { name: 'Dismiss sign-in info.' }).click();
+  await page.getByTestId('header-currency-picker-trigger').click();
+  await page.getByRole('button', { name: 'Turkish Lira TRY' }).click();
+  await page.getByRole('combobox', { name: 'Where are you going?' }).click();
+  await page.getByRole('combobox', { name: 'Where are you going?' }).fill('London');
+  await page.getByRole('button', { name: 'Central London London,' }).click();
+  await page.getByTestId('searchbox-dates-container').click();
+  await page.getByTestId('searchbox-dates-container').click();
+  await page.getByRole('tab', { name: 'I\'m flexible' }).click();
+  await page.locator('div:nth-child(3) > .f6e3a11b0d > .acb5e14a4b').click();
+  await page.locator('span').filter({ hasText: 'Jun2026' }).first().click();
+  await page.getByRole('button', { name: 'Select dates' }).click();
+  await page.getByTestId('occupancy-config').click();
+  await page.locator('.de576f5064.b46cd7aad7.e26a59bb37.c295306d66.c7a901b0e7.aaf9b6e287.dc8366caa6').first().click();
+  await page.locator('.de576f5064.b46cd7aad7.e26a59bb37.c295306d66.c7a901b0e7.aaf9b6e287.dc8366caa6').first().click();
+  await page.locator('.de576f5064.b46cd7aad7.e26a59bb37.c295306d66.c7a901b0e7.aaf9b6e287.dc8366caa6').first().click();
+  await page.locator('.de576f5064.b46cd7aad7.e26a59bb37.c295306d66.c7a901b0e7.aaf9b6e287.dc8366caa6').first().click();
+  await page.locator('.de576f5064.b46cd7aad7.e26a59bb37.c295306d66.c7a901b0e7.aaf9b6e287.dc8366caa6').first().click();
+  await page.locator('.de576f5064.b46cd7aad7.e26a59bb37.c295306d66.c7a901b0e7.aaf9b6e287.dc8366caa6').first().click();
+  await page.getByTestId('occupancy-popup').getByText('8').click();
+  await page.getByTestId('occupancy-popup').getByText('0').click();
+  await page.getByTestId('occupancy-popup').getByText('1').click();
+  await page.locator('.bc7af14f80').click();
+  await page.getByRole('button', { name: 'Done' }).click();
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.goto('https://www.booking.com/searchresults.html?ss=Central+London%2C+London%2C+Greater+London%2C+United+Kingdom&map=1&efdco=1&label=gen173nr-10CAEoggI46AdIM1gEaCeIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApnYjswGwAIB0gIkMjkwN2QxMTktNDFlMC00NzUzLWE2NWUtZWQ1Yjk4M2U3Yzkw2AIB4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=2280&dest_type=district&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=7d20900c3a44090e&ac_meta=GhA3ZDIwOTAwYzNhNDQwOTBlIAAoATICZW46BkxvbmRvbkAASgBQAA%3D%3D&ltfd=6%3A28%3A6-2026%3A1%3A&group_adults=8&no_rooms=1&group_children=0&nflt=%3Bstay_type%3D1%3B&travelling_with_pets=1#map_opened');
+  await page.getByRole('button', { name: 'Close map' }).click();
+  const page1Promise = page.waitForEvent('popup');
+  await page.getByTestId('availability-cta-btn').nth(2).click();
+  const page1 = await page1Promise;
+  await page1.goto('https://www.booking.com/hotel/gb/indigo-clerkenwell-by-ihg.html?aid=304142&label=gen173nr-10CAEoggI46AdIM1gEaCeIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4ApnYjswGwAIB0gIkMjkwN2QxMTktNDFlMC00NzUzLWE2NWUtZWQ1Yjk4M2U3Yzkw2AIB4AIB&sid=00dbe5fa50b81ab338b865b957dd3a78&all_sr_blocks=1405246401_412362510_2_0_0%2C1405246401_412362510_2_0_0%2C1405246401_412362510_2_0_0%2C1405246401_412362510_2_0_0&checkin=2026-06-27&checkout=2026-07-25&dest_id=2280&dest_type=district&dist=0&group_adults=8&group_children=0&hapos=3&highlighted_blocks=1405246401_412362510_2_0_0%2C1405246401_412362510_2_0_0%2C1405246401_412362510_2_0_0%2C1405246401_412362510_2_0_0&hpos=3&matching_block_id=1405246401_412362510_2_0_0&nflt=stay_type%3D1&no_rooms=1&req_adults=8&req_children=0&room1=A%2CA%2CA%2CA%2CA%2CA%2CA%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1405246401_412362510_2_0_0__1011700%2C1405246401_412362510_2_0_0__1011700%2C1405246401_412362510_2_0_0__1011700%2C1405246401_412362510_2_0_0__1011700&srepoch=1770237057&srpvid=a59f9773084b29ad6678639715f452f7&type=total&ucfs=1&');
+});

@@ -1,0 +1,9 @@
+Scenario: Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled
+Status: FAILED
+Browser launched: msedge
+Base URL: https://www.booking.com/
+Started: 2026-02-04T22:06:33.069Z
+Finished: 2026-02-04T22:08:16.565Z
+Duration(ms): 103497
+
+Steps:

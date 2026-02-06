@@ -1,0 +1,10 @@
+Run started: 2026-02-06T13:16:32.606Z
+Run ended:   2026-02-06T13:18:42.270Z
+Total time:  130s
+
+Totals: {"total":1,"FAILED":1}
+
+- FAILED :: Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled
+  browser: msedge
+  screenshot: reports\FAILED_1770383920885.png
+  error: locator.waitFor: Timeout 60000ms exceeded.

@@ -1,0 +1,21 @@
+{
+  "name": "booking-bdd-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bdd": "cucumber-js features/**/*.feature --require-module ts-node/register --require src/support/**/*.ts --require src/steps/**/*.ts --format progress --format json:reports/cucumber-report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.2.0",
+    "playwright": "^1.58.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

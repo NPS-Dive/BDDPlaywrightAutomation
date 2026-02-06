@@ -1,0 +1,383 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "booking.com-search-with-currency,-flexible-dates,-guests-and-pets;search-hotels-in-london-with-try-currency,-flexible-month-dates,-8-adults-and-pets-enabled",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 892810400
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlciBsYXVuY2hlZCB3aXRoIGNoYW5uZWw9Im1zZWRnZSI=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJicm93c2VyQ2hhbm5lbCI6ICJtc2VkZ2UiLAogICJyZXBvcnRzRGlyIjogIkc6XFwxNDA0XFxtb2hheW1lblxcYm9va2luZy1iZGQtcGxheXdyaWdodFxccmVwb3J0cyIsCiAgInNjZW5hcmlvIjogIlNlYXJjaCBob3RlbHMgaW4gTG9uZG9uIHdpdGggVFJZIGN1cnJlbmN5LCBmbGV4aWJsZSBtb250aCBkYXRlcywgOCBhZHVsdHMgYW5kIHBldHMgZW5hYmxlZCIsCiAgInN0YXJ0SXNvIjogIjIwMjYtMDItMDZUMTQ6MzI6MzcuMzMxWiIKfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the Booking homepage",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3924900599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "if an advertisement popup is visible I close it",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:136"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120732411299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I open the currency selector",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:141"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 180005964700,
+              "error_message": "Error: function timed out, ensure the promise resolves within 180000 milliseconds\n    at Timeout.<anonymous> (G:\\1404\\mohaymen\\booking-bdd-playwright\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I select currency \"TRY\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "if an advertisement popup is visible I close it",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I focus destination input",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:168"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I type destination \"London\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I select the first destination suggestion",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:183"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "if an advertisement popup is visible I close it",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I open the date picker",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:193"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I choose flexible dates",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:201"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I select length of stay \"A month\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I select month \"2026Jun\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I confirm dates",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:234"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "if an advertisement popup is visible I close it",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I open guests and rooms selector",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:242"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I set Adults to 8",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:250"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I set Children to 0",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:268"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I set Rooms to 1",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:280"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I enable travelling with pets",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:292"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I confirm guests selection",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:314"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "if an advertisement popup is visible I close it",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:136"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I click Search",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:322"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see hotel results",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:330"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I open availability for hotel #3",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:341"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the availability page should be displayed",
+            "match": {
+              "location": "src\\steps\\booking.steps.ts:361"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 873371900
+            },
+            "embeddings": [
+              {
+                "data": "RmFpbHVyZSBzY3JlZW5zaG90OiBHOlwxNDA0XG1vaGF5bWVuXGJvb2tpbmctYmRkLXBsYXl3cmlnaHRccmVwb3J0c1xGQUlMRURfMTc3MDM4ODY2MjkwOV9TZWFyY2ggaG90ZWxzIGluIExvbmRvbiB3aXRoIFRSWSBjdXJyZW5jeSwgZmxleGlibGUgbW9udGggZGF0ZXMsIDggYWR1bHRzIGFuZCBwZXRzIGVuYWJsZWQucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "booking.com-search-with-currency,-flexible-dates,-guests-and-pets",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Booking.com search with currency, flexible dates, guests and pets",
+    "tags": [],
+    "uri": "features\\booking.feature"
+  }
+]

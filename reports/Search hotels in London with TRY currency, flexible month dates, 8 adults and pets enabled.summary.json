@@ -1,0 +1,13 @@
+{
+  "scenario": "Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled",
+  "startedAt": "2026-02-04T22:06:33.069Z",
+  "steps": [],
+  "env": {
+    "browserLaunched": "msedge",
+    "baseUrl": "https://www.booking.com/",
+    "keepBrowserOpen": true
+  },
+  "status": "FAILED",
+  "finishedAt": "2026-02-04T22:08:16.565Z",
+  "durationMs": 103497
+}

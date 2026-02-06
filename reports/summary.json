@@ -1,0 +1,12 @@
+[
+  {
+    "scenarioName": "Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled",
+    "status": "FAILED",
+    "durationMs": 180005,
+    "browserChannel": "msedge",
+    "startIso": "2026-02-06T14:37:43.468Z",
+    "endIso": "2026-02-06T14:37:42.909Z",
+    "failureMessage": "Error: function timed out, ensure the promise resolves within 180000 milliseconds\n    at Timeout.<anonymous> (G:\\1404\\mohaymen\\booking-bdd-playwright\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)",
+    "failureScreenshot": "G:\\1404\\mohaymen\\booking-bdd-playwright\\reports\\FAILED_1770388662909_Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled.png"
+  }
+]

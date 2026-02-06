@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-02-06T13:16:32.606Z",
+  "endedAt": "2026-02-06T13:18:42.270Z",
+  "totalMs": 129664,
+  "totals": {
+    "total": 1,
+    "FAILED": 1
+  },
+  "scenarios": [
+    {
+      "name": "Search hotels in London with TRY currency, flexible month dates, 8 adults and pets enabled",
+      "status": "FAILED",
+      "durationMs": 120163,
+      "browserChannel": "msedge",
+      "error": "locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[id^=\"header_currency_picker\"]').first() to be visible\u001b[22m\n\n    at selectCurrencyByCode (G:\\1404\\mohaymen\\booking-bdd-playwright\\src\\steps\\booking.steps.ts:138:26)\n    at async PWWorld.<anonymous> (G:\\1404\\mohaymen\\booking-bdd-playwright\\src\\steps\\booking.steps.ts:236:3)",
+      "screenshot": "reports\\FAILED_1770383920885.png"
+    }
+  ]
+}
