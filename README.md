@@ -53,7 +53,7 @@ The suite automates a realistic user flow on Booking.com:
 
 ---
 
-## Project Structure
+## Project file Structure
 
 features/
 booking.feature # Gherkin scenario(s)
